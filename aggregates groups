@@ -1,0 +1,9 @@
+Drills for Aggregates and Groups
+
+What was the hottest day in our data set? Where was that? The hottest day was 2015-11-17 where the temperature was 134 degrees and in the 94063 zip code.
+
+How many trips started at each station? select start_station, count(*) count from trips group by start_station
+
+What's the shortest trip that happened? select trip_id, min(duration) from trips
+
+What is the average trip duration, by end station? select end_station, avg(duration) from trips group by end_station
